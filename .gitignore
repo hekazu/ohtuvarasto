@@ -1,6 +1,8 @@
 *.tmp
 __pycache__/
 .pytest_cache/
+.coverage
+htmlcov/
 
 # Piilotan nämä omaan devaustapaani littyvät tiedostot
 .envrc
