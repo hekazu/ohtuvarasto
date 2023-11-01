@@ -89,3 +89,4 @@ class TestVarasto(unittest.TestCase):
 
     def test_negatiivinen_alkusaldo_tarkoittaa_tyhjaa(self):
         self.assertAlmostEqual(Varasto(10,-10).saldo, 0)
+
