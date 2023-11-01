@@ -1,0 +1,1 @@
+Hi everyone, I'm using the Nix package manager! No need to fret about it, this is fine. You can run this project without using it if you have GHC installed.
