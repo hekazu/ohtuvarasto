@@ -1,4 +1,7 @@
 module Message where
 
 printDefaultMessage :: IO ()
-printDefaultMessage = putStrLn "Hello, World!"
+printDefaultMessage = printMessage "Hello, World!"
+
+printMessage :: String -> IO ()
+printMessage = putStrLn
