@@ -73,12 +73,16 @@ class TestVarasto(unittest.TestCase):
 
     def test_negatiivinen_tila_ei_mahdollinen(self):
         nega_varasto = Varasto(-7)
-        self.assertAlmostEqual(nega_varasto.paljonko_mahtuu(), 0)
+        self.assertAlmostEqual(nega_varasto.tilavuus, 0)
 
     def test_negatiivinen_tila__ja_saldo_ei_mahdollinen(self):
         nega_varasto = Varasto(-7,-3)
         self.assertAlmostEqual(nega_varasto.paljonko_mahtuu(), 0)
         self.assertAlmostEqual(nega_varasto.saldo, 0)
+
+    def test_negatiivinen_alkusaldo_ei_lisaa_tilavuutta(self):
+        monttu_varasto = Varasto(10,-5)
+        self.assertAlmostEqual(monttu_varasto.paljonko_mahtuu(), 10)
 
     def test_ylisuuri_alkusaldo_menee_roskikseen(self):
         self.assertAlmostEqual(Varasto(10,100).saldo, 10)
