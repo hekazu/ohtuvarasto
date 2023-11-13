@@ -8,7 +8,7 @@ def main():
     print("Luonnin jälkeen:")
     print(f"Mehuvarasto: {mehua}")
     print(f"Olutvarasto: {olutta}")
-    print("Placeholder: Toimintaa testataan tarkemmin testeissä.")
+    print("Placeholder: Toimintaa testataan tarkemmin testeissä. Ei ole tarkoituksenmukaista aiheuttaa suunnatonta määrää lokispämmiä joka ajolla.")
 
 
 if __name__ == "__main__":
