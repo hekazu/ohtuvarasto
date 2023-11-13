@@ -18,10 +18,10 @@ disable=raw-checker-failed,
 
 [FORMAT]
 max-line-length=80
-indent-after-paren=2
 
 [REFACTORING]
 max-nested-blocks=2
 
 [DESIGN]
 max-statements=15
+max-branches=3
