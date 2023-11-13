@@ -24,4 +24,4 @@ max-nested-blocks=2
 
 [DESIGN]
 max-statements=15
-max-branches=3
+max-branches=5
